@@ -1,3 +1,29 @@
-<p>
-  navbar works!
-</p>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">Andrew Peliza</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/mycourse">My Course</a>
+      </li>
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/courses">Courses</a>
+      </li>
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/aboutus">About Us</a>
+      </li>
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/signin">Sign In</a>
+      </li>
+      <li class="nav-item-cust" routerLinkActive="active">
+        <a class="nav-link" routerLink="/signup">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
