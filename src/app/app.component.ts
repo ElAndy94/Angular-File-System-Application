@@ -1,7 +1,8 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Student } from './student';
-import {Person} from './person';
-import {Police} from './police';
+import { Person } from './person';
+import { Police } from './police';
+import { Teacher } from './teacher';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,9 @@ export class AppComponent {
 
   bizzy = new Police('Big', 'Man', 3340);
 
-  andrew = new Student( 'Andrew', 'Peliza', 15092060);
+  andrew = new Student( 'Andrew', 'Peliza', 15092060, 'Computing');
+
+  angi = new Teacher( 'Andrew', 'Peliza', 15092060, 'Computing');
 }
 
 

@@ -1,13 +1,13 @@
-export class Student {
+export class Teacher {
   public fname: string;
   public lname: string;
-  public studentId: number;
-  public course: string;
+  public teacherId: number;
+  public course: string [];
 
-  constructor(fname: string, lname: string, studentId: number, course: string) {
+  constructor(fname: string, lname: string, teacherId: number, course: string []) {
     this.fname = fname;
     this.lname = lname;
-    this.studentId = studentId;
+    this.teacherId = teacherId;
     this.course = course;
 
   }
@@ -19,7 +19,7 @@ export class Student {
   }
 
   getLastNameAndId() {
-    const lnameId = this.lname + ' ' + this.studentId;
+    const lnameId = this.lname + ' ' + this.teacherId;
 
     return lnameId;
   }
