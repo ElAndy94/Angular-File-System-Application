@@ -24,4 +24,10 @@ export class Teacher {
     return lnameId;
   }
 
+  getAllInfo() {
+    const allInfo = this.fname + ' ' + this.lname + ' ' + this.teacherId + ' ' + this.course;
+
+    return allInfo;
+  }
+
 }

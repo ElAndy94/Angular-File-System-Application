@@ -20,7 +20,7 @@ export class AppComponent {
 
   andrew = new Student( 'Andrew', 'Peliza', 15092060, 'Computing');
 
-  angi = new Teacher( 'Andrew', 'Peliza', 15092060, 'Computing');
+  angi = new Teacher( 'Andrew', 'Peliza', 15092060, ['Computing', 'Software Dev']);
 }
 
 

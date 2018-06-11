@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  padding-top: 2em;
+}
+
+#deImg {
+  max-height: 10em;
+  max-width: 10em;
+  min-height: 10em;
+}
+
+#proImg {
+  max-height: 10em;
+  max-width: 10em;
+  min-height: 10em;
+}
+
+#isImg {
+  max-height: 10em;
+  max-width: 10em;
+  min-height: 10em;
+}
+
+#awImg {
+  max-height: 10em;
+  max-width: 10em;
+  min-height: 10em;
+}
+
+/*card-img-top {*/
+/*max-width: 10em;*/
+/*}*/

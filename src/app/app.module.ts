@@ -10,8 +10,8 @@ import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MycourseComponent } from './mycourse/mycourse.component';
-import { CoursesComponent } from './courses/courses.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import {CoursesSelectionComponent} from './courses-selection/courses-selection.component';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     NavbarComponent,
     HomeComponent,
     MycourseComponent,
-    CoursesComponent,
+    CoursesSelectionComponent,
     AboutusComponent
   ],
   imports: [
