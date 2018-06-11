@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  padding-top: 2em;
+}
+
+/*.inputfile {*/
+  /*width: 0.1px;*/
+  /*height: 0.1px;*/
+  /*opacity: 0;*/
+  /*overflow: hidden;*/
+  /*position: absolute;*/
+  /*z-index: -1;*/
+/*}*/
+
+/*.inputfile {*/
+  /*font-size: 1.25em;*/
+  /*font-weight: 700;*/
+  /*color: white;*/
+  /*background-color: black;*/
+  /*display: inline-block;*/
+  /*cursor: pointer; !* "hand" cursor *!*/
+/*}*/
+
+/*.inputfile:focus,*/
+/*.inputfile:hover {*/
+  /*background-color: red;*/
+/*}*/
+
+/*.inputfile:focus {*/
+  /*outline: 1px dotted #000;*/
+  /*outline: -webkit-focus-ring-color auto 5px;*/
+/*}*/

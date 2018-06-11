@@ -3,13 +3,23 @@
   font-family: courier;
 }
 
-.navbarNav {
+/*.nav-item-cust {*/
+  /*float: none;*/
+  /*display: inline-block;*/
+/*}*/
+
+.navbar-nav {
+  width: 100%;
   text-align: center;
 }
 
 .navbar-brand {
   font-family: courier;
 }
+
+/*.collapse navbar-collapse {*/
+
+/*}*/
 
 /*#navfix0 {*/
   /*margin-left: 5em;*/

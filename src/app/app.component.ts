@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Student } from './student';
 import { Person } from './person';
-import { Police } from './police';
 import { Teacher } from './teacher';
 
 @Component({
@@ -15,9 +14,6 @@ export class AppComponent {
   // andy = new Person('Andy', 'Peliza');
 
   josh = new Person('josh', 'hazel');
-
-  bizzy = new Police('Big', 'Man', 3340);
-
   andrew = new Student( 'Andrew', 'Peliza', 15092060, 'Computing');
 
   angi = new Teacher( 'Andrew', 'Peliza', 15092060, ['Computing', 'Software Dev']);
