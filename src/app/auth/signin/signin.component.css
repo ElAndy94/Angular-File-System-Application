@@ -1,0 +1,17 @@
+.container {
+  padding-top: 3em;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  /*display: inline-block;*/
+  /*display: flex;*/
+  /*-ms-flex-wrap: wrap;*/
+  /*flex-wrap: wrap;*/
+  /*margin-right: -15px;*/
+  /*margin-left: -15px;*/
+}

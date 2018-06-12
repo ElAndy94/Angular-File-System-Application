@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+    <div class="col"></div>
+    <div class="col-6">
       <form (ngSubmit)="onSignin(f)" #f="ngForm">
         <div class="form-group">
           <label for="email">Email</label>
@@ -14,5 +15,8 @@
         <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign In</button>
       </form>
     </div>
+    <div class="col"></div>
   </div>
 </div>
+    <!--<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">-->
+  <!--</div>-->
