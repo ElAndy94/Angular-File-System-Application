@@ -19,26 +19,26 @@ export class DataStorageService {
   }
 
 
-  getTheUserId() {
-    this.http.get<User[]>('https://ng-file-system.firebaseio.com/userId.json', {
-      observe: 'body',
-      responseType: 'json'
-    })
-      .map(
-        (users) => {
-          for (const user of users) {
-            if (!user['user']) {
-              console.log(users);
-              user['user'] = [];
-            }
-          }
-          return users;
-        }
-      )
-      .subscribe(
-        (users: User[]) => {
-          this.userid.setUserId(users);
-        }
-      );
-  }
+  // getTheUserId() {
+  //   this.http.get<User[]>('https://ng-file-system.firebaseio.com/userId.json', {
+  //     observe: 'body',
+  //     responseType: 'json'
+  //   })
+  //     .map(
+  //       (users) => {
+  //         for (const user of users) {
+  //           if (!user['user']) {
+  //             console.log(users);
+  //             user['user'] = [];
+  //           }
+  //         }
+  //         return users;
+  //       }
+  //     )
+  //     .subscribe(
+  //       (users: User[]) => {
+  //         this.userid.setUserId(users);
+  //       }
+  //     );
+  // }
 }

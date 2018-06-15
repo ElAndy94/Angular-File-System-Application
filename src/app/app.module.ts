@@ -29,7 +29,7 @@ import {AuthGuard} from './auth/auth-guard.service';
     AboutusComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'file-system' }),
     FormsModule,
     AppRoutingModule,
     AuthModule

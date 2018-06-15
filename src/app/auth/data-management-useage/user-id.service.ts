@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+// import { Subject } from 'rxjs/Subject';
 
 // import { Ingredient } from '../shared/ingredient.model';
 // import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 import { User } from './user.model';
+import {Subject} from 'rxjs/internal/Subject';
 
 @Injectable()
 export class UserIdService {
