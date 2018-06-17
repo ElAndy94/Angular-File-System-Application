@@ -1,34 +1,40 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 // import { Subject } from 'rxjs/Subject';
 
 // import { Ingredient } from '../shared/ingredient.model';
 // import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
-import { User } from './user.model';
-import {Subject} from 'rxjs/internal/Subject';
-
-@Injectable()
-export class UserIdService {
-  theUser = new Subject<User[]>();
-
-  private users: User[] = [
-    new User(
-      'Andrew',
-      'Peliza',
-      1394854,
-      ['Computing', 'Art']
-      )
-  ];
+// import { User } from './user.model';
+// import {Subject} from 'rxjs/internal/Subject';
+//
+// @Injectable()
+// export class UserIdService {
+//   theUser = new Subject<User[]>();
+//
+//   private users: User[] = [
+//     new User(
+//       'Andrew',
+//       'Peliza',
+//       1394854,
+//       ['Computing', 'Art']
+//       )
+//   ];
 
   // constructor(private slService: ShoppingListService) {}
-  storeUserId() {
-    return this.users.slice();
-  }
 
-  setUserId(users: User[]) {
-    this.users = users;
-    this.theUser.next(this.users.slice());
-  }
+
+  // storeUserId() {
+  //   return this.users.slice();
+  // }
+  //
+  // setUserId(users: User[]) {
+  //   this.users = users;
+  //   this.theUser.next(this.users.slice());
+  // }
+
+
+
+
   //
   // getRecipe(index: number) {
   //   return this.recipes[index];

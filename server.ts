@@ -14,6 +14,7 @@ enableProdMode();
 
 // Express server
 const app = express();
+const api = require('./api');
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
@@ -55,3 +56,5 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Node server listening on http://localhost:${PORT}`);
 });
+
+
