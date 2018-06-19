@@ -14,9 +14,12 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   // { path: 'signin', component: SigninComponent },
   // { path: 'signup', component: SignupComponent },
-  { path: 'mycourse', component: MycourseComponent, canActivate: [AuthGuard] },
-  { path: 'courses-selection', component: CoursesSelectionComponent, canActivate: [AuthGuard] },
-  { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
+  { path: 'mycourse', component: MycourseComponent },
+  { path: 'courses-selection', component: CoursesSelectionComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  // { path: 'mycourse', component: MycourseComponent, canActivate: [AuthGuard] },
+  // { path: 'courses-selection', component: CoursesSelectionComponent, canActivate: [AuthGuard] },
+  // { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
   // { path: '**', component: HomeComponent } /*I need to fix this*/
 ];
 

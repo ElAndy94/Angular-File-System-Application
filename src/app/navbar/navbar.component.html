@@ -9,7 +9,7 @@
       <li class="nav-item-cust" routerLinkActive="active">
         <a class="nav-link" id="navfix0" routerLink="/home">Home<span class="sr-only">(current)</span></a>
       </li>
-    <ng-container *ngIf="authService.isAuthenticated()">
+    <!-- <ng-container *ngIf="authService.isAuthenticated()"> -->
         <li class="nav-item-cust" routerLinkActive="active">
           <a class="nav-link" routerLink="/mycourse">My Course</a>
         </li>
@@ -19,20 +19,21 @@
         <li class="nav-item-cust" routerLinkActive="active">
           <a class="nav-link" routerLink="/aboutus">About Us</a>
         </li>
-    </ng-container>
+    <!-- </ng-container> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <ng-template [ngIf]="!authService.isAuthenticated()">
+      <!-- <ng-template [ngIf]="!authService.isAuthenticated()"> -->
         <li class="nav-item-cust" routerLinkActive="active">
           <a class="nav-link" id="navfix1" routerLink="/signin">Sign In</a>
         </li>
         <li class="nav-item-cust" routerLinkActive="active">
           <a class="nav-link" routerLink="/signup">Sign Up</a>
         </li>
-      </ng-template>
+      <!-- </ng-template> -->
       <li class="nav-item-cust">
-        <a style="cursor: pointer;" class="nav-link" (click)="onLogout()"
-           *ngIf="authService.isAuthenticated()">Logout</a>
+        <a style="cursor: pointer;" class="nav-link">LogOut</a>
+        <!-- <a style="cursor: pointer;" class="nav-link" (click)="onLogout()"
+           *ngIf="authService.isAuthenticated()">Logout</a> -->
       </li>
     </ul>
   </div>

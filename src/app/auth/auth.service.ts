@@ -10,48 +10,26 @@ export class AuthService {
   }
 
   signupUser(email: string, password: string) {
-    // firebase.auth().createUserWithEmailAndPassword(email, password)
-      // .then(
-        // response => {
           this.router.navigate(['/signin']);
-        // })
-      // .catch(
-      //   error => console.log(error)
-      // );
   }
 
   signinUser(email: string, password: string) {
-    // firebase.auth().signInWithEmailAndPassword(email, password)
-      // .then(
-        // response => {
           this.router.navigate(['/home']);
-          // firebase.auth().currentUser.getIdToken()
-            // .then(
-              // (token: string) => this.token = token
-            // );
         }
-      // )
-      // .catch(
-      //   error => console.log(error)
-      // );
-  // }
 
   logout() {
-    // firebase.auth().signOut();
     this.token = null;
   }
-  //
+
   getToken() {
-    // getIdToken()
-    // firebase.auth().currentUser.getIdToken()
-      // .then(
-      //   (token: string) => this.token = token
-      // );
-    return this.token;
+    // return this.token; testing
+    return this.token = null;
   }
-  //
+
   isAuthenticated() {
     return this.token != null;
+    // return this.token = null;
+
   }
-  //
+
 }
