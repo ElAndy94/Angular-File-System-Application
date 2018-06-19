@@ -2,6 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -11,8 +12,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MycourseComponent } from './mycourse/mycourse.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import {CoursesSelectionComponent} from './courses-selection/courses-selection.component';
-
+import { CoursesSelectionComponent } from './courses-selection/courses-selection.component';
+import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostsService } from './posts/posts.service';
 
 @NgModule({
   declarations: [
@@ -23,14 +26,17 @@ import {CoursesSelectionComponent} from './courses-selection/courses-selection.c
     HomeComponent,
     MycourseComponent,
     CoursesSelectionComponent,
-    AboutusComponent
+    AboutusComponent,
+    PostCreateComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   { path: 'mycourse', component: MycourseComponent },
   { path: 'courses-selection', component: CoursesSelectionComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: '**', component: HomeComponent } /*I need to fix this*/
+  // { path: '**', component: HomeComponent } /*I need to fix this*/
 ];
 
 
