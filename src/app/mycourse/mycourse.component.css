@@ -27,6 +27,9 @@
   min-height: 10em;
 }
 
+.card {
+  cursor:pointer;
+}
 /*card-img-top {*/
 /*max-width: 10em;*/
 /*}*/

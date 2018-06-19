@@ -1,8 +1,7 @@
 <div class="container">
   <app-post-create></app-post-create>
-  <app-post-list></app-post-list>
   <div class="card-deck">
-    <div class="card">
+    <div class="card" (click)="onClickAdv()">
       <div class="card-body">
       <h5 class="card-title">Advanced Web Development</h5>
       <img class="card-img-top" id="awImg" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Card image cap">
@@ -17,52 +16,36 @@
         </p>
       </div>
     </div>
-    <div class="card">
+    <div class="card" (click)="onClickEng()">
       <div class="card-body">
         <h5 class="card-title">Data Engineering</h5>
         <img class="card-img-top" id="deImg" src="https://upload.wikimedia.org/wikipedia/commons/4/46/BigData_2267x1146_white.png" alt="Card image cap">
-        <p class="card-text">Evaluate and reflect on emerging trends and applications in the database market <br>
-          Design develop and maintain PL/SQL programs that manipulate small-sized relational and object-relational databases. <br>
-          Rationalise the alternative principles of organising, designing and building infa-structures for the processing of very large databases. <br>
-          Apply advanced data analytic techniques to a variety of architectures and data models to support data science and business intelligence processes. <br>
-          Identify, apply, experiment and evaluate data mining techniques and algorithms</p>
+        <p class="card-text">Evaluate and reflect on emerging trends and applications in the database market <br></p>
         <p class="card-text">
           <small class="text-muted">(643G236_33248_923Z6)</small>
         </p>
       </div>
     </div>
-    <div class="card">
+    <div class="card" (click)="onClickProject()">
       <div class="card-body">
       <h5 class="card-title">Project</h5>
       <img class="card-img-top" id="proImg" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Toicon-icon-fandom-game.svg" alt="Card image cap">
-        <p class="card-text">Independently plan, manage and successfully complete a project of substantial size in an area that is relevant to your degree programme.
-          <br>
-          Demonstrate that you have the capacity to gain new skills and knowledge independently of teaching.
-          <br>
-          Analyse, compare, discuss and assess existing work, as well as your own work.
-          <br>
-          Synthesise and integrate the learning obtained from other units taken on your degree programme.
-          <br>
-          Identify, develop and critically reflect on own engagement with professional development.</p>
+        <p class="card-text">Independently plan, manage and successfully complete a project of substantial size in an area that is relevant to your degree programme.<br></p>
         <p class="card-text">
           <small class="text-muted">(634ZG1101_5718_9Z6)</small>
         </p>
       </div>
     </div>
-    <div class="card">
+    <div class="card" (click)="onClickIs()">
       <div class="card-body">
         <h5 class="card-title">Information Systems Strategy</h5>
         <img class="card-img-top" id="isImg" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/NIST_Enterprise_Architecture_Model.jpg" alt="Card image cap">
-        <p class="card-text">Apply a range of contemporary modelling techniques to capture information about socio-technical systems.
-          <br>
-          Evaluate and apply the issues, concepts and techniques of project management.
-          <br>
-          Evaluate & Apply strategic planning techniques and models of IS/IT exploitation to inform high level management decisions.
-          <br>
-          Critically assess the design, integration, management and operation of information systems in a wider organisational context.</p>
+        <p class="card-text">Apply a range of contemporary modelling techniques to capture information about socio-technical systems.<br></p>
         <p class="card-text">
           <small class="text-muted">(6G62336_123418_93Z6)</small>
         </p>
       </div>
     </div>
+  </div>
+  <app-post-list></app-post-list>
   </div>

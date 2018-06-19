@@ -12,4 +12,20 @@ export class MycourseComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickAdv() {
+    console.log('Adv');
+  }
+
+  onClickEng() {
+    console.log('eng');
+  }
+
+  onClickProject() {
+    console.log('project');
+  }
+
+  onClickIs() {
+    console.log('IS');
+  }
+
 }
