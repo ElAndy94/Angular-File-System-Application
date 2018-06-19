@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row">
-      <div class="col">
-      </div>
-
-      <div class="col-6">
+    <div class="col">
+    </div>
+    <div class="col-6">
       <form (ngSubmit)="onSignin(f)" #f="ngForm">
         <div class="form-group">
           <label for="email">Email</label>
@@ -11,12 +10,11 @@
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" ngModel class="form-control"
-                 [minlength]="6">
+          <input type="password" id="password" name="password" ngModel class="form-control" [minlength]="6">
         </div>
         <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign In</button>
       </form>
-      </div>
-      <div class="col"></div>
+    </div>
+    <div class="col"></div>
   </div>
 </div>
