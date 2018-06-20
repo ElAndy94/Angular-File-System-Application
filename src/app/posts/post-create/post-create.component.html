@@ -2,16 +2,18 @@
   <!-- <form (submit)="onAddPost(postForm)" #postForm="ngForm"> -->
       <form (submit)="onSavePost(postForm)" #postForm="ngForm">
     <div class="form-group">
-      <label for="Title">Post Title</label>
+      <label for="Title">Post</label>
       <input type="text" class="form-control" name="title" [ngModel]="post?.title" required minlength="3" placeholder="Post Title" #title="ngModel">
       <!-- <small id="postHelp" class="form-text text-muted">Make this post one to remember.</small> -->
       <!-- <div *ngIf="title.invalid">Please enter a post title.</div> -->
     </div>
-    <div class="form-group">
-      <label for="postContent">Post Content</label>
+    <br>
+    <div class="input-group">
+        <!-- <label for="Content">Post Content</label> -->
       <textarea class="form-control" rows="3" name="content" [ngModel]="post?.content" required placeholder="Post Content" #content="ngModel"></textarea>
       <!-- <div *ngIf="content.invalid">Please enter a post content.</div> -->
     </div>
     <button class="btn btn-success" id="postbtn" type="submit">Save Post</button>
+        <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
   </form>
 </div>
