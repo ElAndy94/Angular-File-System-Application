@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   { path: 'mycourse', component: MycourseComponent },
   { path: 'courses-selection', component: CoursesSelectionComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'post-list', component: PostListComponent },
+  { path: 'list', component: PostListComponent },
   { path: 'create', component: PostCreateComponent },
   { path: 'edit/:postId', component: PostCreateComponent }
   // { path: '**', component: HomeComponent } /*I need to fix this*/
