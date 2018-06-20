@@ -1,3 +1,8 @@
 #postbtn {
   margin-bottom: 2em;
 }
+
+.container {
+  text-align: center;
+  padding-top: 2em;
+}

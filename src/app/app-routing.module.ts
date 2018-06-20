@@ -6,6 +6,8 @@ import {CoursesSelectionComponent} from './courses-selection/courses-selection.c
 import {AboutusComponent} from './aboutus/aboutus.component';
 import {SigninComponent} from './signin/signin.component';
 import {SignupComponent} from './signup/signup.component';
+import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 
 const appRoutes: Routes = [
@@ -16,6 +18,9 @@ const appRoutes: Routes = [
   { path: 'mycourse', component: MycourseComponent },
   { path: 'courses-selection', component: CoursesSelectionComponent },
   { path: 'aboutus', component: AboutusComponent },
+  { path: 'post-list', component: PostListComponent },
+  { path: 'create', component: PostCreateComponent },
+  { path: 'edit/:postId', component: PostCreateComponent }
   // { path: '**', component: HomeComponent } /*I need to fix this*/
 ];
 
