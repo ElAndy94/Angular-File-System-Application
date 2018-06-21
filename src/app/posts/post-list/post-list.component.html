@@ -8,6 +8,10 @@
         <hr>
         <div class="card-text">
           {{ post.content }}
+          <br>
+          <div class="post-image">
+            <img [src]="post.imagePath" [alt]="post.title">
+          </div>
         </div>
         <div>
           <hr>
