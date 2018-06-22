@@ -19,8 +19,8 @@ export class PostCreateComponent implements OnInit {
   post: Post;
   form: FormGroup;
   imagePreview: string;
-  private mode = 'create';
   private postId: string;
+  private mode = 'create';
 
   constructor(public postsService: PostsService, public route: ActivatedRoute, private spinnerService: Ng4LoadingSpinnerService) {}
 
