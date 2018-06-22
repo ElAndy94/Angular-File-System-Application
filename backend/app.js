@@ -5,12 +5,15 @@ const mongoose = require('mongoose');
 
 const postsRoutes = require('./routes/posts');
 
+//load config file
+const config = require('../config/config');
 // const Post = require('./models/post');
 
 const app = express();
 
-mongoose.connect("mongodb+srv://andy:N2LcfyylMOLfsbel@cluster0-hhltm.mongodb.net/node-angular?retryWrites=true")
-  .then(() => {
+// mongoose.connect("mongodb+srv://andy:N2LcfyylMOLfsbel@cluster0-hhltm.mongodb.net/node-angular?retryWrites=true")
+mongoose.connect(`mongodb+srv://${config.name}:${config.pw}@cluster0-hhltm.mongodb.net/node-angular?retryWrites=true`)
+.then(() => {
     console.log('Connected to the database!')
   })
   .catch(() => {
